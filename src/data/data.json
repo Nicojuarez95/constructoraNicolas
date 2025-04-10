@@ -1,21 +1,21 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Todo en un mismo lugar",
+    "paragraph": "Brindamos soluciones integrales para tu hogar o empresa, con un equipo especializado en instalaciones, obras y mantenimiento de calidad."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Somos una empresa dedicada a brindar soluciones completas en instalaciones y construcción. Contamos con un equipo de profesionales capacitados que trabajan con responsabilidad, compromiso y eficiencia. Nuestro objetivo es ofrecer un servicio integral, seguro y adaptado a cada necesidad, garantizando siempre la mejor calidad.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Atención personalizada",
+      "Experiencia en obras grandes y pequeñas",
+      "Materiales y técnicas de calidad",
+      "Cumplimiento de plazos y normativas"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Equipo profesional y capacitado",
+      "Soluciones a medida",
+      "Amplia variedad de servicios",
+      "Compromiso con el cliente"
     ]
   },
   "Gallery": [
@@ -67,34 +67,34 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-fire",
+      "name": "Instalación de gas",
+      "text": "Realizamos instalaciones de gas seguras y habilitadas, tanto para viviendas como para obras comerciales."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-tint",
+      "name": "Instalación de agua",
+      "text": "Montamos sistemas de agua potable eficientes, utilizando materiales de alta calidad y técnicas modernas."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-recycle",
+      "name": "Instalación de cloacas",
+      "text": "Diseñamos e instalamos redes cloacales adaptadas a las necesidades de cada proyecto, cumpliendo normas vigentes."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-bolt",
+      "name": "Instalación eléctrica",
+      "text": "Ejecutamos instalaciones eléctricas completas, garantizando seguridad, rendimiento y cumplimiento de normas."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cogs",
+      "name": "Climatización",
+      "text": "Ofrecemos soluciones de calefacción y aire acondicionado eficientes, adaptadas a cada tipo de ambiente."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-building",
+      "name": "Construcción y revestimientos",
+      "text": "Realizamos obras tradicionales y colocamos revestimientos con terminaciones profesionales y estéticas."
     }
   ],
   "Testimonials": [
@@ -162,23 +162,23 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Asesoramiento personalizado",
+      "text": "Escuchamos tus necesidades y ofrecemos soluciones a medida, acompañándote en cada etapa del proyecto."
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Comunicación constante",
+      "text": "Mantenemos contacto directo con el cliente para garantizar transparencia y seguimiento en tiempo real."
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Equipo capacitado",
+      "text": "Contamos con profesionales formados en cada área, comprometidos con la calidad y la seguridad."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wrench",
+      "title": "Resultados garantizados",
+      "text": "Trabajamos con materiales certificados y procesos controlados, logrando resultados duraderos y eficientes."
     }
   ]
 }

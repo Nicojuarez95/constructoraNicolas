@@ -1,40 +1,35 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 
 const initialState = {
   name: "",
   email: "",
+  location: "",
   message: "",
 };
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, location, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    const phoneNumber = "5493584834859"; // Reemplazá esto con tu número de WhatsApp
+    const text = `Hola, mi nombre es ${name}, soy de ${location}. Mi email es ${email} y quería consultar lo siguiente:\n\n${message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+
+    clearState();
   };
+
   return (
     <div>
       <div id="contact">
@@ -42,10 +37,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Contactanos</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  ¿Tenés alguna consulta o proyecto en mente? Escribinos y te responderemos lo antes posible.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -57,8 +51,9 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Nombre"
                         required
+                        value={name}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -73,37 +68,61 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Email"
                         required
+                        value={email}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
                 </div>
+
+                {/* Select de ciudad */}
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="form-group">
+                      <select
+                        id="location"
+                        name="location"
+                        className="form-control"
+                        required
+                        value={location}
+                        onChange={handleChange}
+                      >
+                        <option value="">Seleccioná tu ciudad</option>
+                        <option value="Monte Hermoso">Monte Hermoso</option>
+                        <option value="Bahía Blanca">Bahía Blanca</option>
+                      </select>
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="form-group">
                   <textarea
                     name="message"
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Mensaje"
                     required
+                    value={message}
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Enviar por WhatsApp
                 </button>
               </form>
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>Información de contacto</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Dirección
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
@@ -111,7 +130,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> Celular
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -139,11 +158,6 @@ export const Contact = (props) => {
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -153,9 +167,9 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+            &copy; 2025 Todos los derechos reservados. Hecha por{" "}
+            <a href="http://www.nodex.com.ar" rel="nofollow">
+              nodex
             </a>
           </p>
         </div>
@@ -163,3 +177,4 @@ export const Contact = (props) => {
     </div>
   );
 };
+
