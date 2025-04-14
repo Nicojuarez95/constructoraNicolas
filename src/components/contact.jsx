@@ -21,7 +21,7 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "5493584834859"; // Reemplazá esto con tu número de WhatsApp
+    const phoneNumber = "5493584834859";
     const text = `Hola, mi nombre es ${name}, soy de ${location}. Mi email es ${email} y quería consultar lo siguiente:\n\n${message}`;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
