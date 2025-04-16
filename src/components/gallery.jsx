@@ -26,7 +26,7 @@ export const Gallery = (props) => {
                     />
                   </div>
                 ))
-              : "Loading..."}
+              : "Cargando..."}
           </div>
         </div>
       </div>
